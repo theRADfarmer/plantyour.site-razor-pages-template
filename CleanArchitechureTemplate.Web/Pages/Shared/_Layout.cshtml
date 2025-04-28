@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Clean Architecture Template</title>
     <script type="importmap"></script>
+
+    <!-- CSS Styles -->
+    <!-- Bootstrap.css - Comment out or remove if using custom styles -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PlantYourSite.Web.styles.css" asp-append-version="true" />
+
+    <!-- Alpine.js -->
+    <script defer src="~/lib/alpinejs/dist/cdn.min.js" asp-append-version="true"></script>
 </head>
 <body>
     <header>
@@ -43,8 +50,13 @@
         </div>
     </footer>
 
+    <!-- JQuery -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap.js -->
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- HTMX -->
+    <script src="~/lib/htmx.org/dist/htmx.min.js"></script>
+    <!-- Custom js -->
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
